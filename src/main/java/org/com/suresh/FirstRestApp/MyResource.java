@@ -29,6 +29,7 @@ public class MyResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     public UserInfo getIt(User user) throws SQLException, ClassNotFoundException {
+    	System.out.println("Hello World...");
     	System.out.println("am in... "+user.getUname() +" and "+user.getPwd());
     	Class.forName("com.mysql.jdbc.Driver");
     	Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/user_mgmt_db", "root", "mysql");
