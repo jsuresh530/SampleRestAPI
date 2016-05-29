@@ -58,6 +58,10 @@ public class MyResource {
         return info;
     }
     
+    public void m1(){
+    	System.out.println("Am from m1() method");
+    }
+    
   /*  public static void main(String[] args) throws SQLException {
 		System.out.println(DriverManager.getConnection("jdbc:mysql://localhost:3307/user_mgmt_db", "root", "mysql"));
 	}*/
