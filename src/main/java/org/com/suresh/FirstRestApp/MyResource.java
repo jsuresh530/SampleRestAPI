@@ -49,6 +49,7 @@ public class MyResource {
     		
     	}
     	
+    	
     	if(i==0) {
     		System.out.println("Invalid credentials...");
     		info.setErrorMsg("Invalid User");
@@ -57,7 +58,13 @@ public class MyResource {
         return info;
     }
     
-    public static void main(String[] args) throws SQLException {
+  /*  public static void main(String[] args) throws SQLException {
 		System.out.println(DriverManager.getConnection("jdbc:mysql://localhost:3307/user_mgmt_db", "root", "mysql"));
-	}
+	}*/
+    public static void main(String[] args) {
+    	for (int i = 0; i <=10; i++) {
+    		System.out.println("printing numbers..."+i);
+			
+		}
+    }
 }
