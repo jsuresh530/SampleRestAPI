@@ -60,6 +60,7 @@ public class MyResource {
     
     public void m1(){
     	System.out.println("Am from m1() method");
+    	System.out.println("closing resources...");
     }
     
   /*  public static void main(String[] args) throws SQLException {
@@ -68,6 +69,9 @@ public class MyResource {
     public static void main(String[] args) {
     	for (int i = 0; i <=10; i++) {
     		System.out.println("printing numbers..."+i);
+    		if(i==4) {
+    			System.out.println("found 4");
+    		}
 			
 		}
     }
