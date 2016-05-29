@@ -60,14 +60,23 @@ public class MyResource {
     
     public void m1(){
     	System.out.println("Am from m1() method");
+    	System.out.println("closing resources...");
     }
     
   /*  public static void main(String[] args) throws SQLException {
 		System.out.println(DriverManager.getConnection("jdbc:mysql://localhost:3307/user_mgmt_db", "root", "mysql"));
 	}*/
     public static void main(String[] args) {
-    	for (int i = 0; i <=10; i++) {
+
+    	for (int i = 0; i <=9; i++) {
     		System.out.println("printing numbers..."+i);
+    		if(i==4) {
+    			System.out.println("found 4");
+    		} else{
+    			System.out.println("other number found");
+    		}
+    		System.out.println("printing bio..."+i);
+
 			
 		}
     }
