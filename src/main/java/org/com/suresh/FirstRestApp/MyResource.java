@@ -67,7 +67,8 @@ public class MyResource {
 		System.out.println(DriverManager.getConnection("jdbc:mysql://localhost:3307/user_mgmt_db", "root", "mysql"));
 	}*/
     public static void main(String[] args) {
-    	for (int i = 0; i <=100; i++) {
+
+    	for (int i = 0; i <=9; i++) {
     		System.out.println("printing numbers..."+i);
     		if(i==4) {
     			System.out.println("found 4");
